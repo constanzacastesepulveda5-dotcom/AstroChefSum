@@ -1,0 +1,248 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN TIPOGRÁFICA REFORZADA (MÁS GRUESA Y LEÍBLE)
+   ========================================================================== */
+body {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; 
+}
+
+h1, h2, h3, h4, h5, .display-4, .btn, .badge {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600; 
+  letter-spacing: 1.5px;
+}
+
+/* Clases de visibilidad para textos secundarios sobre fondos oscuros */
+.text-muted-claro {
+  color: #e2e8f0 !important; 
+  font-weight: 500;
+}
+.text-secondary-claro {
+  color: #cbd5e1 !important; 
+  font-weight: 600;
+}
+.text-light-claro {
+  color: #ffffff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   2. PALETA DE COLORES E INTERFAZ TRANSLÚCIDA CYBER
+   ========================================================================== */
+.text-turquoise { color: #48D1CC !important; font-weight: 600; }
+.text-magenta { color: #ff5ca8 !important; font-weight: 600; }
+
+.btn-turquoise { 
+  background-color: rgba(72, 209, 204, 0.15) !important; 
+  border: 1px solid #48D1CC !important;
+  color: #48D1CC !important; 
+}
+.btn-turquoise:hover { 
+  background-color: #48D1CC !important; 
+  color: #0b0f19 !important; 
+}
+.btn-magenta { 
+  background-color: rgba(255, 92, 168, 0.15) !important; 
+  border: 1px solid #ff5ca8 !important;
+  color: #ff5ca8 !important; 
+}
+.btn-magenta:hover { 
+  background-color: #ff5ca8 !important; 
+  color: white !important; 
+}
+
+.astro-title {
+  background: linear-gradient(90deg, #48D1CC, #ff5ca8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.astro-banner-consejo {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(72, 209, 204, 0.3);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   3. ELIMINACIÓN DE FONDOS BLANCOS (INPUTS Y SELECTS CRISTALINOS)
+   ========================================================================== */
+.card.astro-card {
+  background: rgba(15, 23, 42, 0.55) !important;
+  background-color: rgba(15, 23, 42, 0.55) !important;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,.12) !important;
+
+  box-shadow:
+      0 10px 35px rgba(0,0,0,.45),
+      inset 0 1px rgba(255,255,255,.08);
+
+  color: white !important;
+}
+
+.astro-input {
+  background-color: rgba(11, 15, 25, 0.6) !important; 
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  font-weight: 400;
+}
+.astro-input::placeholder {
+  color: #94a3b8 !important;
+}
+.astro-input:focus {
+  background-color: rgba(11, 15, 25, 0.8) !important;
+  border-color: #48D1CC !important;
+  box-shadow: 0 0 0 0.25rem rgba(72, 209, 204, 0.25) !important;
+}
+.astro-input option {
+  background-color: #0b0f19 !important;
+  color: #ffffff !important;
+}
+
+.astro-metric-box {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.x-small { font-size: 0.75rem; letter-spacing: 0.5px; }
+
+/* ==========================================================================
+   4. CATÁLOGO CULINARIO Y TARJETAS LÍMPIAS
+   ========================================================================== */
+.border-bottom-cyan { border-bottom: 2px solid rgba(72, 209, 204, 0.3); }
+.bg-dark-transparent { background-color: rgba(255, 255, 255, 0.02); }
+.border-dashed { border: 2px dashed rgba(72, 209, 204, 0.3); }
+
+.astro-light-text.label-vacia { 
+  font-weight: 600 !important; 
+  color: #38bdf8 !important; 
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+.bg-dark-opacity { background-color: rgba(11, 15, 25, 0.9); }
+.border-turquoise-sm { border: 1px solid rgba(72, 209, 204, 0.4); }
+.text-secondary-light { color: #e2e8f0; font-weight: 400; }
+.astro-desc-text {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.border-top-dark { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+.small-font { font-size: 0.78rem; }
+
+.astro-toast {
+  animation: slideIn 0.3s ease forwards;
+}
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==========================================================================
+   5. BLINDAJE TOTAL DE TARJETAS (Resuelve definitivamente image_e65aa0.png)
+   ========================================================================== */
+.astro-catalog .astro-recipe-card {
+  background-color: #151f32 !important; /* Fuerza el fondo cyber oscuro absoluto */
+  background: #151f32 !important;
+  border: 1px solid rgba(72, 209, 204, 0.3) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.astro-catalog .astro-recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Letras de títulos en alta visibilidad */
+.astro-catalog .astro-recipe-card h3 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+/* Botón Editar corregido con alto contraste fijo */
+.astro-catalog .astro-recipe-card .btn-outline-light {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+.astro-catalog .astro-recipe-card .btn-outline-light:hover {
+  background-color: #ffffff !important;
+  color: #0b0f19 !important;
+}
+
+/* ==========================================================================
+   6. SISTEMA MODO DALTÓNICO (SOBREESCRITURA TOTAL DE ALTO CONTRASTE)
+   ========================================================================== */
+.modo-daltonico {
+  --azul-universal: #2563eb !important;
+  --naranja-alto-contraste: #f97316 !important;
+  --amarillo-brillante: #facc15 !important;
+}
+
+.modo-daltonico .text-turquoise,
+.modo-daltonico .text-magenta {
+  color: var(--amarillo-brillante) !important;
+}
+.modo-daltonico .text-muted-claro {
+  color: #ffffff !important;
+}
+.modo-daltonico .btn-turquoise {
+  background-color: rgba(250, 204, 21, 0.15) !important;
+  border-color: var(--amarillo-brillante) !important;
+  color: var(--amarillo-brillante) !important;
+}
+.modo-daltonico .btn-turquoise:hover {
+  background-color: var(--amarillo-brillante) !important;
+  color: #0b0f19 !important;
+}
+.modo-daltonico .btn-magenta {
+  background-color: rgba(249, 115, 22, 0.15) !important;
+  border-color: var(--naranja-alto-contraste) !important;
+  color: var(--naranja-alto-contraste) !important;
+}
+.modo-daltonico .btn-magenta:hover {
+  background-color: var(--naranja-alto-contraste) !important;
+  color: #ffffff !important;
+}
+.modo-daltonico .astro-title {
+  background: linear-gradient(90deg, var(--amarillo-brillante), var(--naranja-alto-contraste)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+.modo-daltonico .astro-card {
+  border: 1px solid rgba(250, 204, 21, 0.4) !important;
+  background: rgba(15, 23, 42, 0.85) !important;
+}
+/* ==========================================================================
+   7. CONTENEDOR PRINCIPAL EFECTO CRISTAL (GLASSMORPHISM)
+   ========================================================================== */
+
+.astro-container {
+  background: rgba(8, 12, 22, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+
+  box-shadow:
+    0 8px 35px rgba(0, 0, 0, 0.45),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 35px;
+
+  transition: all 0.3s ease;
+}
+
+.astro-container:hover {
+  box-shadow:
+    0 10px 45px rgba(0, 0, 0, 0.60),
+    0 0 20px rgba(72, 209, 204, 0.08);
+}
